@@ -85,7 +85,7 @@ Para utilizar PwnDoc en producción, asegúrate de seguir estos pasos:
 
 A continuación, puedes construir y ejecutar los contenedores Docker:
 
-```bash
+    ```
 docker-compose up -d --build
     ```
 
