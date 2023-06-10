@@ -84,7 +84,7 @@ Para utilizar PwnDoc en producción, asegúrate de seguir estos pasos:
 1. Cambia el secreto JWT en el archivo `src/lib/auth.js`.
 2. Actualiza los certificados en la carpeta `ssl`.
 
-A continuación, puedes construir y ejecutar los contenedores Docker:
+- A continuación, puedes construir y ejecutar los contenedores Docker:
 
     ```
     docker-compose up -d --build
@@ -116,9 +116,7 @@ La aplicación estará disponible en https://localhost:8443 y la API en https://
 
 Desarrollo
 Para propósitos de desarrollo, puedes utilizar un archivo docker-compose específico en cada carpeta (backend/frontend).
-
 El código fuente puede ser modificado en vivo y la aplicación se recargará automáticamente con los cambios.
-
 - A continuación, puedes construir y ejecutar los contenedores de backend y base de datos:
     ```
     docker-compose -f backend/docker-compose.dev.yml up -d --build
