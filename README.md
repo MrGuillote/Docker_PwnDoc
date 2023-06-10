@@ -42,8 +42,9 @@ La instalación de Docker en Linux puede variar según la distribución específ
 - Para otras distribuciones de Linux, consulta la documentación oficial de Docker para obtener instrucciones específicas.
 
 Después de instalar Docker, verifica que esté funcionando correctamente ejecutando el siguiente comando en una terminal:
-
-
+    ```
+    docker --version
+    ```
 
 # PWNDOC: GENERADOR DE INFORMES PENTEST
 
@@ -89,23 +90,23 @@ A continuación, puedes construir y ejecutar los contenedores Docker:
     docker-compose up -d --build
     ```
 
-Mostrar los registros del contenedor backend:
+- Mostrar los registros del contenedor backend:
     ```
     docker-compose logs -f pwndoc-backend
     ```
-Detener los contenedores:
+- Detener los contenedores:
     ```
     docker-compose stop
     ```
-Arrancar los contenedores:
+- Arrancar los contenedores:
     ```
     docker-compose start
     ```
-Eliminar los contenedores:
+- Eliminar los contenedores:
     ```
     docker-compose down
     ```
-Actualizar la aplicación:
+- Actualizar la aplicación:
     ```
     docker-compose down
     git pull
@@ -118,24 +119,24 @@ Para propósitos de desarrollo, puedes utilizar un archivo docker-compose espec�
 
 El código fuente puede ser modificado en vivo y la aplicación se recargará automáticamente con los cambios.
 
-A continuación, puedes construir y ejecutar los contenedores de backend y base de datos:
+- A continuación, puedes construir y ejecutar los contenedores de backend y base de datos:
     ```
     docker-compose -f backend/docker-compose.dev.yml up -d --build
     ```
-Mostrar los registros del contenedor backend:
+- Mostrar los registros del contenedor backend:
     ```
     mpose -f backend/docker-compose.dev.yml logs -f pwndoc-backend
     ```
-Detener el contenedor:
+- Detener el contenedor:
     ```
     docker-compose -f backend/docker-compose.dev.yml stop
     ```
-Arrancar el contenedor:
+- Arrancar el contenedor:
     ```
     docker-compose -f backend/docker-compose.dev.yml start
     ```
-Eliminar los contenedores:
+- Eliminar los contenedores:
     ```
     docker-compose -f backend/docker-compose.dev.yml down
     ```
-La aplicación estará disponible en http://localhost:8081 y la API en `https://localhost:525
+- La aplicación estará disponible en http://localhost:8081 y la API en `https://localhost:525
