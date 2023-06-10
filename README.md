@@ -86,31 +86,30 @@ Para utilizar PwnDoc en producción, asegúrate de seguir estos pasos:
 A continuación, puedes construir y ejecutar los contenedores Docker:
 
     ```
-docker-compose up -d --build
+    docker-compose up -d --build
     ```
 
 Mostrar los registros del contenedor backend:
     ```
-docker-compose logs -f pwndoc-backend
+    docker-compose logs -f pwndoc-backend
     ```
 Detener los contenedores:
     ```
-docker-compose stop
+    docker-compose stop
     ```
 Arrancar los contenedores:
     ```
-docker-compose start
+    docker-compose start
     ```
 Eliminar los contenedores:
     ```
-docker-compose down
+    docker-compose down
     ```
 Actualizar la aplicación:
     ```
-docker-compose down
-    ```
-git pull
-docker-compose up -d --build
+    docker-compose down
+    git pull
+    docker-compose up -d --build
     ```
 La aplicación estará disponible en https://localhost:8443 y la API en https://localhost:4242/api. Si utilizas Firefox, deberás añadir una excepción de certificado para el backend. Para ello, ve a https://localhost:4242/api/users/init.
 
@@ -121,22 +120,22 @@ El código fuente puede ser modificado en vivo y la aplicación se recargará au
 
 A continuación, puedes construir y ejecutar los contenedores de backend y base de datos:
     ```
-docker-compose -f backend/docker-compose.dev.yml up -d --build
+    docker-compose -f backend/docker-compose.dev.yml up -d --build
     ```
 Mostrar los registros del contenedor backend:
     ```
-mpose -f backend/docker-compose.dev.yml logs -f pwndoc-backend
+    mpose -f backend/docker-compose.dev.yml logs -f pwndoc-backend
     ```
 Detener el contenedor:
     ```
-docker-compose -f backend/docker-compose.dev.yml stop
+    docker-compose -f backend/docker-compose.dev.yml stop
     ```
 Arrancar el contenedor:
     ```
-docker-compose -f backend/docker-compose.dev.yml start
+    docker-compose -f backend/docker-compose.dev.yml start
     ```
 Eliminar los contenedores:
     ```
-docker-compose -f backend/docker-compose.dev.yml down
+    docker-compose -f backend/docker-compose.dev.yml down
     ```
 La aplicación estará disponible en http://localhost:8081 y la API en `https://localhost:525
