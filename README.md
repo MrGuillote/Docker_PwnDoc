@@ -87,25 +87,31 @@ A continuación, puedes construir y ejecutar los contenedores Docker:
 
 ```bash
 docker-compose up -d --build
-
+    ```
 
 Mostrar los registros del contenedor backend:
-
+    ```
 docker-compose logs -f pwndoc-backend
+    ```
 Detener los contenedores:
-
+    ```
 docker-compose stop
+    ```
 Arrancar los contenedores:
-
+    ```
 docker-compose start
+    ```
 Eliminar los contenedores:
-
+    ```
 docker-compose down
+    ```
 Actualizar la aplicación:
-
+    ```
 docker-compose down
+    ```
 git pull
 docker-compose up -d --build
+    ```
 La aplicación estará disponible en https://localhost:8443 y la API en https://localhost:4242/api. Si utilizas Firefox, deberás añadir una excepción de certificado para el backend. Para ello, ve a https://localhost:4242/api/users/init.
 
 Desarrollo
@@ -114,18 +120,23 @@ Para propósitos de desarrollo, puedes utilizar un archivo docker-compose espec�
 El código fuente puede ser modificado en vivo y la aplicación se recargará automáticamente con los cambios.
 
 A continuación, puedes construir y ejecutar los contenedores de backend y base de datos:
-
+    ```
 docker-compose -f backend/docker-compose.dev.yml up -d --build
+    ```
 Mostrar los registros del contenedor backend:
-
+    ```
 mpose -f backend/docker-compose.dev.yml logs -f pwndoc-backend
+    ```
 Detener el contenedor:
-
+    ```
 docker-compose -f backend/docker-compose.dev.yml stop
+    ```
 Arrancar el contenedor:
-
+    ```
 docker-compose -f backend/docker-compose.dev.yml start
+    ```
 Eliminar los contenedores:
-
+    ```
 docker-compose -f backend/docker-compose.dev.yml down
+    ```
 La aplicación estará disponible en http://localhost:8081 y la API en `https://localhost:525
